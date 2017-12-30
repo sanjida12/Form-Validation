@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <div id="mainform">
+            <div class="innerdiv">
+                
+                <form action='#' method='post' id="myForm">
+                    <h3>Fill Your Information!</h3>
+                    <table>
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type='text' name='firstname' id='firstname1' onblur="validate('firstname', this.value)"></td>
+                            <td><div id='firstname'></div></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name</td>
+                            <td><input type='text' name='lastname' id='lastname1' onblur="validate('lastname', this.value)"></td>
+                            <td><div id='lastname'></div></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td><input type='mobile' name='mobile' id='mobile1' onblur="validate('mobile', this.value)"></td>
+                            <td><div id='mobile'></div></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type='text' name='email' id='email1' onblur="validate('email', this.value)"></td>
+                            <td><div id='email'></div></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><input type='text' name='address' id='address1' onblur="validate('address', this.value)"></td>
+                            <td><div id='address'></div></td>
+                        </tr>
+                    </table>
+                    <input type='button' onclick="checkForm()" value='Submit'>
+                </form>
+            </div>
+            
+            
+            </div>
+        </div>
+    </body>
+</html>
